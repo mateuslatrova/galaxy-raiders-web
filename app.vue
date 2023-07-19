@@ -1,19 +1,36 @@
 <template>
+  <header>
+    <nav class="centered-nav">
+      <ul class="horizontal-list">
+        <li><NuxtLink to="/">Home</NuxtLink></li>
+        <li><NuxtLink to="/start">Start game</NuxtLink></li>
+        <li><NuxtLink to="/leaderboard">Leaderboard</NuxtLink></li>
+        <li><NuxtLink to="/quit">Quit game</NuxtLink></li>
+      </ul>
+    </nav>
+  </header>
   <NuxtPage />
 </template>
 
 <style>
-* {
-  margin: 0;
+.centered-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.horizontal-list {
+  display: flex;
+  list-style: none;
   padding: 0;
 }
 
-html {
-  font-size: 12px;
+.horizontal-list li {
+  margin: 0 10px;
+  font-size: 18px
 }
 
-body {
-  height: 100vh;
-  width: 100vw;
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>
